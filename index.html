@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Enkin's New Store</title>
+</head>
+<body>
+    <div class="cart-container">
+        <h1 class="animated-heading" id="cart-heading">🛒 Enkin's Shopping Cart 🛒</h1>
+        <div class="product-form">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name">
+            <label for="product-price">Product Price (Rs.):</label>
+            <input type="number" id="product-price" min="0" step="1">
+            <label for="product-quantity">Product Quantity:</label>
+            <input type="number" id="product-quantity" min="1">
+            <button id="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="cart">
+            <div id="product-image" class="hidden">
+                <img src="images/bg.jpg" alt="Product Image">
+            </div>
+            <table id="cart-table" class="hidden">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-list"></tbody>
+            </table>
+            <button class="total-button" id="cart-total">Total: <span id="total-price">Rs. 0</span></button>
+            <button id="purchase-button" class="hidden">Purchase</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

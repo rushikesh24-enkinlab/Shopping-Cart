@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    background-image: url('bg2.jpg');
+}
+
+.cart-container {
+    background-color: honeydew;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.animated-heading {
+    color: #0077FF;
+    font-size: 36px;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    z-index: 1000;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.product-form {
+    text-align: left;
+    margin-top: 30px;
+}
+
+#product-image img {
+    max-width: 300px; 
+    max-height: 300px; 
+    border: 2px solid #0077FF; 
+    border-radius: 10px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button#add-to-cart {
+    background-color: #0077FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    font-size: 20px;
+}
+
+button#add-to-cart:hover {
+    background-color: #0055CC;
+    transform: scale(1.05);
+}
+
+.cart {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.cart h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#cart-table th, #cart-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#cart-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+#cart-table td {
+    background-color: #f9f9f9;
+}
+
+button.remove {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s, transform 0.2s;
+    font-size: 14px;
+}
+
+button.remove:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+#purchase-button {
+    background-color: #0077FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    font-size: 20px;
+}
+
+#purchase-button:hover {
+    background-color: #0055CC;
+    transform: scale(1.05);
+}
+
+
+.cart-total {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    animation: fadeIn 1s;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.total-button {
+    background-color: #0077FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 180px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right; 
+}
+
+.total-button span {
+    margin-left: 10px; 
+}
+
+.total-button:hover {
+    background-color: #0055CC;
+}
+
